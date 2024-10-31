@@ -1,0 +1,82 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    padding: 20px; 
+    height: 100vh; 
+    justify-content: flex-start;
+}
+
+.login h2 {
+    color: black; 
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.post {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    margin: 10px 0;
+    border-radius: 10px;
+    color: #000000;
+    transition: transform 0.3s ease; 
+}
+
+
+.post:hover {
+    transform: scale(1.05); 
+}
+
+.post h3, .post p {
+    margin: 0;
+    padding: 5px 0;
+    color: black;
+}
+
+.post img, .post video {
+    max-width: 90%;
+    max-height: 250px; 
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #34495e;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+button:hover {
+    background-color: #2c3e50;
+}
+
+.comment-input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.comment-button {
+    background-color: #34495e;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.comment-button:hover {
+    background-color: #2c3e50;
+}

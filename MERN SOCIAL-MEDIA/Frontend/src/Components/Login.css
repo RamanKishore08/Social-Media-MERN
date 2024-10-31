@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://wallpapers.com/images/high/solid-light-blue-background-flzxneiqsfriult4.webp');
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    opacity: 90%;
+    background-color: rgb(219, 214, 219);
+    border-radius: 15px;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 60px;
+    width: 500px;
+    animation: fadeIn 0.6s ease-in-out;
+}
+.login-container:hover {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 60px;
+    border: 4px solid #ab9090;
+    width: 500px;
+
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: 2rem;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #b262b8;
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    border-color: #000000;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(90deg, #4e4944, #7e7775);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #383635, #232323);
+    transform: translateY(-2px) scale(1.02);
+}
+
+p {
+    text-align: center;
+    margin-top: 15px;
+    color: #2196f3;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+}
+
+p:hover {
+    color: #000000;
+    transform: scale(1.05);
+    font-size: 1.2rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
